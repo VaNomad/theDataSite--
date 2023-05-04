@@ -25,10 +25,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Icon */ }
       <div onClick={handleNav} className="block md:hidden cursor-pointer hover:scale-125 duration-75">
-        {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} /> }
+        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} /> }
       </div>
       {/* Mobile Menu */}
-      <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500" : "fixed top-[-100%] left-0 w-[60%] ease-in duration-300"}>
+      <div className={nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] opacity-[.77] ease-in-out duration-500" : "fixed top-[-100%] left-0 w-[60%] ease-in duration-300"}>
         <div className="flex flex-col m-4">
           <h1 className="w-full text-3xl font-bold text-[#00df9a]">REACT.</h1>
           <h1 className="w-full text-3xl font-bold text-[#f982eb]">Vite.</h1>
