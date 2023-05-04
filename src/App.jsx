@@ -5,6 +5,7 @@ import Analytics from "./components/Analytics";
 import Newsletter from "./components/Newsletter";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import Noroff from "./components/Noroff";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Analytics />
       <Newsletter />
       <Cards />
+      <Noroff />
       <Footer />
     </div>
   );
