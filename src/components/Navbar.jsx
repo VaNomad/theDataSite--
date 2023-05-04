@@ -24,7 +24,7 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Menu Icon */ }
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block md:hidden cursor-pointer hover:scale-125 duration-75">
         {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} /> }
       </div>
       {/* Mobile Menu */}
